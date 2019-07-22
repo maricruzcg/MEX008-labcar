@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lwlfc0');
+  src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lwlfc0') format('truetype'),
+    url('../fonts/icomoon.woff?lwlfc0') format('woff'),
+    url('../fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+/* Grid */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    /*max-width: 1000px;*/
+    margin: 0px auto;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row:before, .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after{
+    clear:both; 
+  }
+
+[class*="col-"]{
+    float: left;
+    min-height: 10px;
+    /*gutters*/
+    padding: 12px;
+}
+
+.col-1{width: 8.333333333333332%}
+.col-2{width: 16.666666666666664%}
+.col-3{width: 25%}
+.col-4{width: 33.33333333333333%}
+.col-5{width: 41.66666666666667%}
+.col-6{width: 50%}
+.col-7{width: 58.333333333333336%}
+.col-8{width: 66.66666666666666%}
+.col-9{width: 75%}
+.col-10{width: 83.33333333333334%}
+.col-11{width: 91.66666666666666%}
+.col-12{width: 100%}
+
+
+header{
+  background-color: white;
+  height: 70px;
+  
+}
+/* header nav{
+  background-color: #ffffff;
+  margin-bottom: 10px;
+} */
+header nav ul {
+      list-style: none;
+      overflow: hidden;
+      float: left ;
+    }
+      header nav ul li{
+        display: inline-block;
+        padding-top: 3px;
+      }
+        header nav ul li a{
+          display: block;
+          color: black;
+          text-decoration: none;
+          font-weight: normal;
+          font-size: 80%;
+          padding: 1rem;
+        }
+        header nav ul li a:hover {
+          background:#f7b617;
+        }   
+        .logo{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1.5em;
+          margin-left: 12em;
+          
+        }
+            h1{
+              font-size: 130%;
+              color: white;
+              margin-left: 20px;
+              margin-bottom: 1em;
+            }
+            p{
+              font-size: 110%;
+              color: white;
+              margin-left: 20px;
+            
+            }
+        #logo-registro{
+          
+          width: 20%;
+          margin-left: 10em;
+        }
+        .registro{
+          line-height: 2em;
+          font-size: 85%;
+
+        }
+        #obien{
+          text-align: center;
+          margin: 10px;
+        }
+        .menu{
+          align-items: right;
+        }
+        .botones{
+          padding: 8px;
+          margin-left: 10px;
+          color: black;
+          font-size: 15px;
+          background-color: white;
+          border-radius: 5px;
+          white-space: nowrap;
+          border: 5px white;
+        }
+        .hero{
+          background-image: url(imagenes/taxi-escritorio.jpg);
+          background-attachment: scroll;
+          background-size: cover;
+          background-position: center;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          height: 80vh;
+          align-content: flex-end;
+          flex-flow: row wrap;
+          position: relative;
+
+        }
+        .texto{
+          background-color: #f7b617;
+          position: relative;
+          width: 50%;
+          height: 50%;
+          margin-left: 50em;
+          margin-bottom: 7em;
+          
+        }
+        /* seccion de informacion */
+        #img-cel{
+          width: 70%;
+          margin: 50px;
+          margin-left: 100px;
+        }
+        .descarga{
+          margin-left: 8em;
+          margin-top: 5em;
+        }
+        .informacion{
+          background-color: #f7b617;
+          height: 75vh;
+          
+        }
+        .conductor{
+          background-image: url(imagenes/conduce.jpg);
+          background-attachment: scroll;
+          background-size: cover;
+          background-position: center;
+          max-width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          height: 80vh;
+          align-content: flex-end;
+          flex-flow: row wrap;
+          position: relative;
+        }
+        
+        .conduce{
+          background-color: black; opacity: 0.6;
+          
+          position: relative;
+          width: 80%;
+          height: 100%;
+          margin-left: 50em;
+          
+        }
+        .transparencia{
+          position: relative;
+          width: 10%;
+          height: 10%;
+          margin-left: 50em;
+        }
+        .tarifa{
+          background-color: #f7b617;
+          height: 70vh;
+          
+        }
+
+        footer{
+          background-color: #2b2b2b ;
+          height: 70vh;
+        }
